@@ -45,14 +45,22 @@ def book(competition,club):
         return render_template('welcome.html', club=club, competitions=competitions)
 
 
-@app.route('/purchase_places',methods=['POST'])
+@app.route('/purchase_places', methods=['POST'])
 def purchase_places():
     competition = [c for c in competitions if c['name'] == request.form['competition']][0]
     club = [c for c in clubs if c['name'] == request.form['club']][0]
     places_required = int(request.form['places'])
-    competition['numberOfPlaces'] = int(competition['numberOfPlaces'])-places_required
-    flash('Great-booking complete!')
-    return render_template('welcome.html', club=club, competitions=competitions)
+    book_authorized = True  # bolean to ckeck if the book is authorized
+    if int(club['points']) < places_required:
+        flash('You don\'t have enough points')
+        book_authorized = False
+    if book_authorized:
+        competition['numberOfPlaces'] = int(competition['numberOfPlaces'])-places_required
+        club['points'] = int(club['points'])-places_required
+        flash('Great-booking complete!')
+        return render_template('welcome.html', club=club, competitions=competitions)
+    else:
+        return render_template('welcome.html', club=club, competitions=competitions)
 
 
 @app.route('/show_points', methods=['GET'])
