@@ -53,6 +53,9 @@ def purchase_places():
     places_required = int(request.form['places'])
     date = datetime.strptime(competition['date'], "%Y-%m-%d %H:%M:%S")
     book_authorized = True  # bolean to ckeck if the book is authorized
+    if places_required > int(competition['numberOfPlaces']):
+        flash('No enough places for this competition')
+        book_authorized = False
     if date < datetime.now():
         flash('You can\'t book for a past competition')
         book_authorized = False
