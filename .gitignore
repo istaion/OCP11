@@ -4,4 +4,6 @@ lib
 .Python
 tests/
 .envrc
+.idea
+env/
 __pycache__
