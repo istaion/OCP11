@@ -51,6 +51,9 @@ def purchase_places():
     club = [c for c in clubs if c['name'] == request.form['club']][0]
     places_required = int(request.form['places'])
     book_authorized = True  # bolean to ckeck if the book is authorized
+    if places_required > 12:
+        flash('You can\'t book more than 12 points')
+        book_authorized = False
     if int(club['points']) < places_required:
         flash('You don\'t have enough points')
         book_authorized = False
