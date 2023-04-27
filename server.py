@@ -5,14 +5,14 @@ from datetime import datetime
 
 def load_clubs():
     with open('clubs.json') as c:
-         list_of_clubs = json.load(c)['clubs']
-         return list_of_clubs
+        list_of_clubs = json.load(c)['clubs']
+        return list_of_clubs
 
 
 def load_competitions():
     with open('competitions.json') as comps:
-         list_of_competitions = json.load(comps)['competitions']
-         return list_of_competitions
+        list_of_competitions = json.load(comps)['competitions']
+        return list_of_competitions
 
 
 app = Flask(__name__)
@@ -21,9 +21,11 @@ app.secret_key = 'something_special'
 competitions = load_competitions()
 clubs = load_clubs()
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/show_summary', methods=['POST'])
 def show_summary():
@@ -36,11 +38,11 @@ def show_summary():
 
 
 @app.route('/book/<competition>/<club>')
-def book(competition,club):
+def book(competition, club):
     found_club = [c for c in clubs if c['name'] == club][0]
     found_competition = [c for c in competitions if c['name'] == competition][0]
     if found_club and found_competition:
-        return render_template('booking.html',club=found_club,competition=found_competition)
+        return render_template('booking.html', club=found_club, competition=found_competition)
     else:
         flash("Something went wrong-please try again")
         return render_template('welcome.html', club=club, competitions=competitions)

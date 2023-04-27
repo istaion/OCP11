@@ -17,7 +17,7 @@ class TestsFunctional(LiveServerTestCase):
         self.driver.quit()
 
     def test_functional(self):
-        time_sleep = 0.2 # time between action
+        time_sleep = 0.2  # time between action
         # login
         self.driver.get(config.url_root)
         email_form = self.driver.find_element(By.ID, 'email')
