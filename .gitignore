@@ -2,8 +2,8 @@ bin
 include
 lib
 .Python
-tests/
 .envrc
 .idea
 env/
+venv/
 __pycache__
