@@ -2,7 +2,6 @@
 
 1. Why
 
-
     This is a proof of concept (POC) project to show a light-weight version of our competition booking platform. The aim is the keep things as light as possible, and use feedback from the users to iterate.
 
 2. Getting Started
@@ -14,14 +13,12 @@
     * [Flask](https://flask.palletsprojects.com/en/1.1.x/)
 
         Whereas Django does a lot of things for us out of the box, Flask allows us to add only what we need. 
-     
 
     * [Virtual environment](https://virtualenv.pypa.io/en/stable/installation.html)
 
         This ensures you'll be able to install the correct packages without interfering with Python on your machine.
 
         Before you begin, please ensure you have this installed globally. 
-
 
 3. Installation
 
@@ -44,8 +41,7 @@
 
 5. Testing
 
-    You are free to use whatever testing framework you like-the main thing is that you can show what tests you are using.
-
-    We also like to show how well we're testing, so there's a module called 
-    [coverage](https://coverage.readthedocs.io/en/coverage-5.1/) you should add to your project.
-
+   You need to install geckodriver for functional test : https://github.com/mozilla/geckodriver/releases
+   If you want to use an other webdriver for selenium you can change the configuration in tests/config.py
+   type <code>pytest</code> for run tests, <code>pytest --cov=.</code> to check cover.
+   For performance tests move to performance_tests and type <code>locust</code>
