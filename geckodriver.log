@@ -117,3 +117,87 @@ JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't fin
 JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
 console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
 1682599208974	Marionette	INFO	Stopped listening on port 41151
+1682607625250	geckodriver	INFO	Listening on 127.0.0.1:54921
+1682607625762	mozrunner::runner	INFO	Running command: "/snap/firefox/current/usr/lib/firefox/firefox" "--marionette" "--remote-debugging-port" "39319" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilerhrX0e"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1682607626555	Marionette	INFO	Marionette enabled
+1682607626564	Marionette	INFO	Listening on port 44685
+ATTENTION: default value of option mesa_glthread overridden by environment.
+Read port: 44685
+WebDriver BiDi listening on ws://127.0.0.1:39319
+1682607626779	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilerhrX0e/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:39319/devtools/browser/3215c5b4-00a7-4d93-9792-3180255db798
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+1682607632210	Marionette	INFO	Stopped listening on port 44685
+1682607936729	geckodriver	INFO	Listening on 127.0.0.1:32837
+1682607937238	mozrunner::runner	INFO	Running command: "/snap/firefox/current/usr/lib/firefox/firefox" "--marionette" "--remote-debugging-port" "44999" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile2LfZbo"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1682607937653	Marionette	INFO	Marionette enabled
+1682607937655	Marionette	INFO	Listening on port 39411
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:44999
+Read port: 39411
+1682607937846	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile2LfZbo/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:44999/devtools/browser/b49f017d-a8d5-4efc-9cea-16241bb3601e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+1682607941919	Marionette	INFO	Stopped listening on port 39411
+1682757893416	geckodriver	INFO	Listening on 127.0.0.1:37685
+1682757893921	mozrunner::runner	INFO	Running command: "/snap/firefox/current/usr/lib/firefox/firefox" "--marionette" "--remote-debugging-port" "37897" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileLHklUf"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1682757894403	Marionette	INFO	Marionette enabled
+1682757894406	Marionette	INFO	Listening on port 37345
+Read port: 37345
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:37897
+1682757894540	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileLHklUf/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:37897/devtools/browser/b792727b-70a8-47da-a6b6-96115405b577
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+1682757898344	Marionette	INFO	Stopped listening on port 37345
+1683039041457	geckodriver	INFO	Listening on 127.0.0.1:33581
+1683039041967	mozrunner::runner	INFO	Running command: "/snap/firefox/current/usr/lib/firefox/firefox" "--marionette" "--remote-debugging-port" "57137" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilexR333P"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1683039042431	Marionette	INFO	Marionette enabled
+1683039042434	Marionette	INFO	Listening on port 44689
+Read port: 44689
+ATTENTION: default value of option mesa_glthread overridden by environment.
+WebDriver BiDi listening on ws://127.0.0.1:57137
+1683039042553	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexR333P/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:57137/devtools/browser/2aca02a2-cfe4-4db3-b56e-40b4b45c17ee
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 58: Error: Can't find profile directory.
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://127.0.0.1:5000."
+1683039046315	Marionette	INFO	Stopped listening on port 44689
